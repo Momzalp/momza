@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recarga Free Fire | DiamonGo Simulado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="main-section">
+    <img class="brand-logo" src="images/logo.png" alt="Logo">
+
+    <div class="welcome">
+      <h2>Bienvenido a DiamonGo Free Fire</h2>
+      <p>Recarga diamantes al instante con 25% de descuento por tiempo limitado.</p>
+    </div>
+
+    <div class="offer">🎉 ¡OFERTA ESPECIAL! Hasta 6160 diamantes con 25% OFF</div>
+
+    <label for="playerId">🔰 ID del Jugador:</label>
+    <input type="text" id="playerId" placeholder="Ej: 123456789">
+
+    <label for="diamonds">💎 Elige tu Recarga:</label>
+    <select id="diamonds">
+      <option value="341">341 Diamantes - S/8.75</option>
+      <option value="572">572 Diamantes - S/13.88</option>
+      <option value="1166">1166 Diamantes - S/27.94</option>
+      <option value="2398">2398 Diamantes - S/55.18</option>
+      <option value="6160">6160 Diamantes - S/139.50</option>
+    </select>
+
+    <button onclick="mostrarPago()">Continuar</button>
+  </div>
+
+  <div class="container" id="payment-section">
+    <h1>Método de Pago</h1>
+    <label for="cardName">Nombre en la tarjeta:</label>
+    <input type="text" id="cardName" placeholder="Ej. Juan Pérez">
+    <label for="cardNumber">Número de tarjeta:</label>
+    <input type="text" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX">
+    <label for="cardExpiry">Fecha de vencimiento:</label>
+    <input type="text" id="cardExpiry" placeholder="MM/AA">
+    <label for="cardCVC">CVC:</label>
+    <input type="text" id="cardCVC" placeholder="123">
+    <button onclick="enviarPedido()">Confirmar Pago</button>
+  </div>
+
+  <div class="container" id="success-section">
+    <div class="checkmark">✔️</div>
+    <h2>¡Pedido Realizado!</h2>
+    <div class="summary" id="resumen"></div>
+    <button onclick="location.reload()">Finalizar</button>
+  </div>
+
+  <div class="footer">MAS DE 5 AÑOS EN EL MERCADO</div>
+  <script src="script.js"></script>
+</body>
+</html>
