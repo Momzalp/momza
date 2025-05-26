@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tienda de Polos - Inicio</title>
+  <title>Carrito - Tienda de Polos</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -20,17 +20,12 @@
   </header>
 
   <main class="container main-content">
-    <section class="hero">
-      <h2>Bienvenido a Mi Tienda de Polos</h2>
-      <p>Encuentra las mejores prendas con estilo y calidad.</p>
-      <a href="catalogo.html" class="btn-primary">Ver Catálogo</a>
-    </section>
+    <h2>Tu Carrito</h2>
+    <ul id="lista-carrito" class="lista-carrito"></ul>
+    <p id="total" class="total"></p>
+    <a href="checkout.html" class="btn-primary" id="btn-pagar" style="display:none;">Proceder al Pago</a>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 Mi Tienda de Polos. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+  <script src="carrito.js"></script>
 </body>
 </html>
